@@ -1,0 +1,266 @@
+{
+    "BMC_in_domain": {
+        "train_filenames": [
+            "remapped_BMC_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_BMC_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_BMC_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_BMC_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_BMC_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    },
+    "PLoS_in_domain": {
+        "train_filenames": [
+            "remapped_PLoS_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_PLoS_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_PLoS_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_PLoS_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_PLoS_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    },
+    "Acta_in_domain": {
+        "train_filenames": [
+            "remapped_Acta_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_Acta_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_Acta_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_Acta_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_Acta_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    },
+    "RU_in_domain": {
+        "train_filenames": [
+            "remapped_RU_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_RU_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_RU_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_RU_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_RU_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    },
+    "grotoap2_25": {
+        "train_filenames": [
+            "remapped_diverse_publications_25_publishers_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_diverse_publications_25_publishers_dev.json"
+        ],
+        "test_filenames_BMC": [
+            "remapped_BMC_test.json"
+        ],
+        "test_filenames_RU": [
+            "remapped_RU_test.json"
+        ],
+        "test_filenames_Acta": [
+            "remapped_Acta_test.json"
+        ],
+        "test_filenames_PLoS": [
+            "remapped_PLoS_test.json"
+        ],
+        "fewshot_finetuning_sets_names_dict": {
+            "BMC": {
+                "train": [
+                    "remapped_BMC_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_BMC_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            },
+            "Acta": {
+                "train": [
+                    "remapped_Acta_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_Acta_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            },
+            "PLoS": {
+                "train": [
+                    "remapped_PLoS_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_PLoS_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            },
+            "RU": {
+                "train": [
+                    "remapped_RU_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_RU_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            }
+        }
+    },
+    "grotoap2_125": {
+        "train_filenames": [
+            "remapped_diverse_publications_125_publishers_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_diverse_publications_125_publishers_dev.json"
+        ],
+        "test_filenames_BMC": [
+            "remapped_BMC_test.json"
+        ],
+        "test_filenames_RU": [
+            "remapped_RU_test.json"
+        ],
+        "test_filenames_Acta": [
+            "remapped_Acta_test.json"
+        ],
+        "test_filenames_PLoS": [
+            "remapped_PLoS_test.json"
+        ],
+        "fewshot_finetuning_sets_names_dict": {
+            "BMC": {
+                "train": [
+                    "remapped_BMC_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_BMC_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            },
+            "Acta": {
+                "train": [
+                    "remapped_Acta_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_Acta_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            },
+            "PLoS": {
+                "train": [
+                    "remapped_PLoS_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_PLoS_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            },
+            "RU": {
+                "train": [
+                    "remapped_RU_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_RU_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            }
+        }
+    },
+    "BMC": {
+        "train_filenames": [
+            "remapped_Acta_train.json",
+            "remapped_PLoS_train.json",
+            "remapped_RU_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_Acta_dev.json",
+            "remapped_PLoS_dev.json",
+            "remapped_RU_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_BMC_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_BMC_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_BMC_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    },
+    "PLoS": {
+        "train_filenames": [
+            "remapped_Acta_train.json",
+            "remapped_BMC_train.json",
+            "remapped_RU_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_Acta_dev.json",
+            "remapped_BMC_dev.json",
+            "remapped_RU_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_PLoS_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_PLoS_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_PLoS_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    },
+    "Acta": {
+        "train_filenames": [
+            "remapped_BMC_train.json",
+            "remapped_PLoS_train.json",
+            "remapped_RU_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_BMC_dev.json",
+            "remapped_PLoS_dev.json",
+            "remapped_RU_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_Acta_test.json"
+        ],
+        "fewshot_finetuning_sets_names_dict": {
+            "Acta": {
+                "train": [
+                    "remapped_Acta_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+                ],
+                "dev": [
+                    "remapped_Acta_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+                ]
+            }
+        }
+    },
+    "RU": {
+        "train_filenames": [
+            "remapped_Acta_train.json",
+            "remapped_BMC_train.json",
+            "remapped_PLoS_train.json"
+        ],
+        "dev_filenames": [
+            "remapped_Acta_dev.json",
+            "remapped_BMC_dev.json",
+            "remapped_PLoS_dev.json"
+        ],
+        "test_filenames": [
+            "remapped_RU_test.json"
+        ],
+        "fewshot_finetuning_train_filenames_by_episode": [
+            "remapped_RU_fewshot_finetune_10_pubs_train_episode_{episode_num}.json"
+        ],
+        "fewshot_finetuning_dev_filenames_by_episode": [
+            "remapped_RU_fewshot_finetune_10_pubs_dev_episode_{episode_num}.json"
+        ]
+    }
+}
