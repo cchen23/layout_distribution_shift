@@ -171,15 +171,21 @@ def main():
         data_files[os.path.split(data_filename)[-1]] = os.path.join(
             data_args.data_dir, data_filename
         )
-    extension = "json"  # NOTE: Hard-coded.
     print(f"Using data files {data_files.keys()}")
-    datasets = load_dataset(extension, data_files=data_files, field="data")
-    for data_file_key, data_file_value in data_files.items():
-        with open(data_file_value, "r") as f:
-            files_list = json.load(f)["files"]
-        datasets[data_file_key] = datasets[data_file_key].add_column(
-            "files", files_list
-        )
+
+    if data_args.load_from_huggingface:
+        datasets = dict()
+        for data_file in data_files:
+            datasets[data_file] = load_dataset('allenai/layout_distribution_shift', split=data_file)
+    else:
+        extension = "json"  # NOTE: Hard-coded.
+        datasets = load_dataset(extension, data_files=data_files, field="data")
+        for data_file_key, data_file_value in data_files.items():
+            with open(data_file_value, "r") as f:
+                files_list = json.load(f)["files"]
+            datasets[data_file_key] = datasets[data_file_key].add_column(
+                "files", files_list
+            )
 
     def filter_fn(example_dict):
         file_id = example_dict["files"]

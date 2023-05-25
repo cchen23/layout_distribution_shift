@@ -124,7 +124,7 @@ class DataTrainingArguments:
     )
 
     do_predict_before_fewshot_finetuning: bool = field(
-        default=False, metadata={"help": "Save predictions before fewshot finetuning"}
+        default=False, metadata={"help": "save predictions before fewshot finetuning"}
     )
 
     do_eval_predictions: bool = field(
@@ -156,6 +156,11 @@ class DataTrainingArguments:
         default=os.path.join(tools_dir_path, "..", "data", "grotoap2_publisher_splits"),
         metadata={"help": "The directory with files containing the examples."},
     )
+    
+    load_from_huggingface: bool = field(
+        default=True, metadata={"help": "Load datasets from huggingface hub"}
+    )
+
     test_publisher_name: Optional[str] = field(
         default=None,
         metadata={
