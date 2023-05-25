@@ -355,8 +355,6 @@ def main():
             load_from_cache_file=not data_args.overwrite_cache,
             fn_kwargs={
                 "max_length": model_args.max_length,
-                "jitter_x": model_args.jitter_x,
-                "jitter_y": model_args.jitter_y,
             },
         )
         if data_args.remove_bounding_boxes:
@@ -377,9 +375,7 @@ def main():
             load_from_cache_file=not data_args.overwrite_cache,
             fn_kwargs={
                 "max_length": model_args.max_length,
-                "jitter_x": 0,
-                "jitter_y": 0,
-            },  # No jitter for eval or test.
+            },
         )
         eval_dataset_batched = eval_dataset.map(
             preprocessor.preprocess_batch,
@@ -389,9 +385,7 @@ def main():
             load_from_cache_file=not data_args.overwrite_cache,
             fn_kwargs={
                 "max_length": model_args.max_length,
-                "jitter_x": 0,
-                "jitter_y": 0,
-            },  # No jitter for eval or test.
+            },
         )
         if data_args.remove_bounding_boxes:
             eval_dataset_for_predictions = eval_dataset.remove_columns(["bbox"])
@@ -411,9 +405,7 @@ def main():
             load_from_cache_file=not data_args.overwrite_cache,
             fn_kwargs={
                 "max_length": model_args.max_length,
-                "jitter_x": 0,
-                "jitter_y": 0,
-            },  # No jitter for eval or test.
+            },
         )
         if data_args.remove_bounding_boxes:
             split_test_dataset = split_test_dataset.remove_columns(["bbox"])
@@ -550,8 +542,6 @@ def main():
             load_from_cache_file=not data_args.overwrite_cache,
             fn_kwargs={
                 "max_length": model_args.max_length,
-                "jitter_x": model_args.jitter_x,
-                "jitter_y": model_args.jitter_y,
             },
         )
 
@@ -563,8 +553,6 @@ def main():
             load_from_cache_file=not data_args.overwrite_cache,
             fn_kwargs={
                 "max_length": model_args.max_length,
-                "jitter_x": model_args.jitter_x,
-                "jitter_y": model_args.jitter_y,
             },
         )
         if data_args.fewshot_episode_num >= 0:

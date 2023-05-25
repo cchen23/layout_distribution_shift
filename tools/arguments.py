@@ -55,14 +55,6 @@ class ModelArguments:
         default=512,
         metadata={"help": "Maximum input length."},
     )
-    jitter_x: int = field(
-        default=0,
-        metadata={"help": "Range to jitter x during training"},
-    )
-    jitter_y: int = field(
-        default=0,
-        metadata={"help": "Range to jitter y during training"},
-    )
     meta_model_type: str = field(
         default="ivila",
         metadata={"help": "The type of metamodel to use (e.g, `no_ivila`, `ivila`)"},
