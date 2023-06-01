@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ## Getting Started
 
 ### Data download:
-[TODO]
+To use models that require document images, download the images [here](https://ai2-s2-research-public.s3.us-west-2.amazonaws.com/layout-distribution-shift-acl-2023/all_images_20230524.tar.gz) and place them in `layout_distribution_shift/data/grotoap2_images/`
 
 ### Performing experiments:
 Scripts to perform the initial training phase and few-shot adaptation are in `run_scripts/`.
