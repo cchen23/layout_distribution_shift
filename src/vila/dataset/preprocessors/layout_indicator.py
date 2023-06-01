@@ -73,7 +73,7 @@ class BaseLayoutIndicatorPDFDataPreprocessor(SimplePDFDataPreprocessor):
         example: Dict,
         padding="max_length",
         max_length: int = 512,
-        images_dir=os.path.join(preprocessors_dir_path, "../../data/grotoap2_images"),
+        images_dir=os.path.join(preprocessors_dir_path, "../../../../data/grotoap2_images"),
     ) -> Dict:
         example, token_id_mapping_table = self.insert_layout_indicator(example)
         if self.processor:

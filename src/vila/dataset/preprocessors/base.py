@@ -75,7 +75,7 @@ class SimplePDFDataPreprocessor(BasePDFDataPreprocessor):
         example: Dict,
         padding="max_length",
         max_length: int = 512,
-        images_dir=os.path.join(preprocessors_dir_path, "../../data/grotoap2_images"),
+        images_dir=os.path.join(preprocessors_dir_path, "../../../../data/grotoap2_images"),
     ) -> Dict:
         """
         Args:
