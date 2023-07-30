@@ -1,4 +1,4 @@
-_Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents_, presented at ACL Findings 2023.
+[_Are Layout-Infused Language Models Robust to Layout Distribution Shifts? A Case Study with Scientific Documents_](https://aclanthology.org/2023.findings-acl.844.pdf), presented at ACL Findings 2023.
 
 This repo is built on top of [VILA](https://github.com/allenai/VILA).
 
